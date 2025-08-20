@@ -1,0 +1,12 @@
+{
+"id" : 158545488,
+"nombre" : "Juan Manuel",
+"edad" : "21",
+"direccion" : {
+"ciudad" : "Medellin",
+"pais" : "Colombia"
+},
+"hobbies" : ["Videojuegos", "caminar", "Escuchar musica"],
+"esCasado" : false
+
+}
