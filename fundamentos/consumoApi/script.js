@@ -3,7 +3,7 @@ const cargarInformacion = async() => {
 const respuesta = await fetch ('../json/persona.json');
 const persona = await respuesta.json ();
 console.log ('persona obtenida', persona)
-}
+} 
 
 // forma 1
 
@@ -23,4 +23,21 @@ const cargarApi =  async() => {
     }
 
 
+}
+
+const mostrarInfo = (persona) => {
+    console.log('Vamos a construir un html');
+
+    const contenedor = document.getElementById('datos');
+
+    contenedor.innerHTML = `
+        <h2 class="miNombre">${persona.nombre}</h2>
+            <p class="miEdad">Edad: ${persona.edad}</p>
+            <div class="misHobbies">
+                <h3>Hobbies</h3>
+                <li>hobbie1</li>
+                <li>hobbie2</li>
+                <li>hobbie3</li>
+            </div>
+    `
 }
